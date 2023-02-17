@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TradingVegetable</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico">
+    <link rel="bookmark" href="../static/img/favicon.ico">
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Noto+Sans+TC:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body id="app">
+    <div class="title">
+      <i class="fa-solid fa-bars menu-btn"  v-on:mouseenter="menu"></i>
+      <img class="logo" src="../static/img/logo.png" alt="logo">
+      <div class="title-text">TradingVegetable</div>
+    </div>
+    <div class="menu" v-show="menuValue" v-on:mouseleave="menu">
+      <img class="menu-header" src="../static/img/logo2.png" alt="">
+      <div class="menu-list">
+        <p class="menu-text" v-on:click="click1">首&emsp;&emsp;頁</p>
+        <p class="menu-text" v-on:click="click2">關&emsp;&emsp;於</p>
+        <p class="menu-text" v-on:click="click3">聯絡我們</p>
+      </div>
+    </div>
+    <div class="about-container">
+        <div class="about">
+            &emsp;&emsp;這個網站可以更好的幫助使用者了解農產品的行情，不必害怕和擔心因為買貴的情形，您也可以透過搜尋功能找到想要找尋的農產品，亦可使用排序來查看現在的農產品行情，如果有甚麼問題，歡迎連絡我們，感謝您的支持。
+        </div>
+    </div>
+  </body>
+  <script src="../static/index.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TradingVegetable</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico">
+    <link rel="bookmark" href="../static/img/favicon.ico">
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Noto+Sans+TC:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body id="app">
+    <div class="title">
+      <i class="fa-solid fa-bars menu-btn"  v-on:mouseenter="menu"></i>
+      <img class="logo" src="../static/img/logo.png" alt="logo">
+      <div class="title-text">TradingVegetable</div>
+      <!-- <img class="headerImg" src="../static/img/header(fixed).png.jpg" alt=""> -->
+      <input type="text" class="search-bar" placeholder="Search" v-model="searchMessage" v-on:change="search">
+      <button type="submit" class="search-btn" v-on:click="search">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <div class="menu" v-show="menuValue" v-on:mouseleave="menu">
+      <img class="menu-header" src="../static/img/logo2.png" alt="">
+      <div class="menu-list">
+        <p class="menu-text" v-on:click="click1">首&emsp;&emsp;頁</p>
+        <p class="menu-text" v-on:click="click2">關&emsp;&emsp;於</p>
+        <p class="menu-text" v-on:click="click3">聯絡我們</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="info-bar">
+        <div class="date-text" v-on:click="click4">資料日期: [[date]]</div>
+        <select id="sort" class="select-bar" v-model="selected" v-on:change="selectChange">
+          <option value="" selected disabled>排序方式</option>
+          <option value="3">最高價</option>
+          <option value="4">最低價</option>
+          <option value="5">均&emsp;價</option>
+          <option value="6">交易量</option>
+        </select>
+      </div>
+      <div class="block" v-for="item in items">
+        <table class="table">
+            <tr>
+              <td style="width: 55px;">名&emsp;稱</td>
+              <td>[[ item[2] ]]</td>
+            </tr>
+            <tr>
+              <td style="width: 55px;">最高價</td>
+              <td>[[ item[3] ]]</td>
+            </tr>
+            <tr>
+              <td style="width: 55px;">最低價</td>
+              <td>[[ item[4] ]]</td>
+            </tr>
+            <tr>
+              <td style="width: 55px;">均&emsp;價</td>
+              <td>[[ item[5] ]]</td>
+            </tr>
+            <tr>
+              <td style="width: 55px;">交易量</td>
+              <td>[[ item[6] ]]</td>
+            </tr>
+            <tr>
+              <td style="width: 55px;">市&emsp;場</td>
+              <td>[[ item[7] ]]</td>
+            </tr>
+        </table>
+      </div>
+      <div class="scroll-btn" v-on:click="scroll">
+          <i class="fa-solid fa-arrow-up" v-if="down"></i>
+          <i class="fa-solid fa-arrow-down" v-else></i>
+      </div>
+    </div>
+  </body>
+  <script src="../static/index.js"></script>
+</html>

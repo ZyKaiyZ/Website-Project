@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Libre+Baskerville:wght@700&family=Noto+Sans+TC:wght@500&family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+}
+
+.title{
+    padding: 20px;
+    background-color: white;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(../static/img/header.jpg);
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.title-text{
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Carter One', cursive;
+    font-weight: bold;
+}
+
+.search-bar{
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    margin-left: auto;
+}
+
+.search-btn{
+    width: 40px;
+    height: 46px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.container{
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 300px;
+    height: 200px;
+    background: #27292a; 
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    /* padding-top: 50px; */
+}
+
+.vegetableImg{
+    position: relative;
+    display: flex;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    width: 100%;
+    height: 20%;
+    background-size: auto;
+}
+
+.inblock-text{
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.select-bar{
+    border: 3px solid #00B4CC;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-left: 78%;
+    height: auto;
+}
+
+.table{
+    /* table-layout:fixed; */
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.date-text{
+    color: white;
+    width: 150px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.info-bar{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.scroll-btn{
+    position: fixed;
+    top: 85%;
+    right: 1.7%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.menu{
+    width: 130px;
+    background-color: #474747;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 10px solid #00B4CC;
+    /* border-bottom: 10px solid #00B4CC; */
+    padding: 50px;
+    display: inline-block;
+}
+
+.menu-list{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.menu-header{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.menu-btn{
+    margin: 20px;
+    font-size: 50px;
+}
+
+.menu-text{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.menu-text:hover{
+    color: #00B4CC;
+}
+
+.about-container{
+    display: flex;
+    padding: 60px;
+    flex-wrap: wrap;
+    background-image: url(https://cdn.dribbble.com/users/8705010/screenshots/17289328/media/79db06d2eb3c21ba95c17b79566da4e9.gif);
+
+}
+
+.about{
+    width: 100%;
+    background: #27292a; 
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 100px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    /* padding-top: 50px; */
+}
+
+.about-gif{
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
+
+.service{
+    width: 100%;
+    background: #27292a; 
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 100px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    /* padding-top: 50px; */
+}
+
+.service-container{
+    padding: 60px;
+    display: flex;
+}
+
+.contact-container{
+    padding: 40px;
+}
+.contact.form{
+    margin-left: 10px;
+}
+
+.contact{
+    background: #27292a; 
+    margin: 10px;
+    display: flex;
+    border-radius: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.contact-title{
+    margin: 10px;
+}
+
+.contact-div{
+    margin: 1px;
+
+}
+
+.contact-info{
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: #00B4CC;
+}
+
+.contact-msg{
+    height: 60px;
+    margin: 10px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: #00B4CC;
+}
+
+.contact-btn{
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border-width: 3px;
+    border-color: #00B4CC;
+}
+
+.contact-img{
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 480px;
+    border-radius: 10px;
+}
